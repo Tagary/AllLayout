@@ -1,0 +1,414 @@
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header__section {
+    background-color: #222;
+}
+
+.header__container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.left__logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.left__logo p {
+    color: #2194ff;
+    font-size: 16px;
+    max-width: 150px
+}
+
+.right__logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.right__logo .tel {
+    font-size: 24px;
+    color: #f1f1f1;
+}
+
+.right__logo .ask {
+    color: #2194ff;
+}
+
+.header__logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.divider {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 50px;
+}
+
+
+
+.img__time {
+    display: flex;
+    align-items: center;
+}
+
+.img__time img {
+    margin-right: 5px;
+}
+
+.img__time img:last-child {
+    margin-right: 0px;
+}
+
+.any__time p {
+    color: #F1F1F1;
+    margin-top: 10px;
+}
+
+.any__weather p {
+    color: #F1F1F1;
+    margin-top: 10px;
+}
+
+.main__info {}
+
+.weather__time {
+    display: flex;
+    align-items: center;
+}
+
+.preview {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info__delivery {
+    font-size: 64px;
+    color: #2194FF;
+    line-height: 63px;
+}
+
+.txt__anotherdots {
+    font-size: 24px;
+    color: #F1F1F1;
+}
+
+.button__order {
+    width: 100%;
+    height: 87px;
+    font-size: 28px;
+    color: #f1f1f1;
+    background-color: #2194FF;
+    border-radius: 10px;
+    background: linear-gradient(#2194FF, #81C0FB, #108CFF)
+}
+
+.button__container {
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+.text__information {
+    text-align: center;
+    color: #f1f1f1;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+
+/* price section */
+
+.price__section {
+    background-color: #222;
+}
+
+
+.main__infoprice {
+    font-size: 36px;
+    color: #2194FF;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.infoprice__row {
+    display: flex;
+    max-width: 1140px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.gaz {
+    font-size: 36px;
+    color: #F1F1F1;
+    font-weight: bold;
+}
+
+.gaz__price {
+    font-size: 24px;
+    color: #2194FF;
+    font-weight: normal;
+    margin-bottom: 30px;
+
+}
+
+.gaz__info {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #F1F1F1;
+    font-weight: 300;
+}
+
+.infoprice__first {
+    max-width: 350px;
+}
+
+.infoprice__third {
+    max-width: 382px;
+}
+
+.infoprice__second {
+    margin: 0 20px;
+}
+
+.button__gaz {
+    height: 43px;
+    border-radius: 50px;
+    background-color: #2194FF;
+    max-width: 155px;
+    width: 100%;
+    border: unset;
+    color: #F1F1F1;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+.perfect__ration {
+    text-align: center;
+    font-size: 20px;
+    color: #F1F1F1;
+    opacity: 70%;
+}
+
+.info__ration {
+    display: flex;
+    justify-content: center;
+    color: #F1F1F1;
+    opacity: 70%;
+}
+
+.ration__percent {
+    font-size: 36px;
+    opacity: 70%;
+}
+
+.ration__gaz {
+    font-size: 18px;
+    opacity: 70%;
+}
+
+.reforger {
+    margin-right: 20px;
+    position: relative;
+}
+
+.reforger::after {
+    content: "|";
+    right: -27px;
+    top: -12px;
+    position: absolute;
+    color: #F1F1F1;
+    font-size: 64px;
+    font-weight: 300;
+    opacity: 70%;
+}
+
+.img__all {
+    width: 100%;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* animation */
+.arrow {
+    text-align: center;
+}
+
+
+.animation__infinitydown {
+    animation: infinitydown 2s infinite;
+}
+
+@keyframes infinitydown {
+
+
+    to {
+        transform: translateY(15px);
+        opacity: 0;
+    }
+}
+
+
+
+/* Benefits */
+
+.new__benefits {
+    background-color: #222;
+}
+
+.main__benifits {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.items__benefits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+.benifits {
+    color: #F1F1F1;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.img__benefits {
+    text-align: center;
+    min-height: 72px;
+}
+
+.item__benefits {
+    width: 30%;
+}
+
+.benifits__article {
+    text-align: center;
+    margin: 10px 0px;
+    font-size: 24px;
+    color: #2194FF;
+}
+
+.benifits__info {
+    text-align: center;
+    color: #F1F1F1;
+    font-size: 16px;
+    opacity: 70%;
+}
+
+/* gurantee */
+
+
+.guarantee {
+    background-color: #222;
+}
+
+section {
+    padding-bottom: 20px;
+}
+
+.gurantee__container {
+    display: flex;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.guarantee__text {
+    color: #f1f1f1;
+    font-size: 35px;
+}
+
+.gurantee__blue {
+    color: #2194FF;
+}
+
+.guarantee__button {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.guarantee__button-blue {
+    width: 100%;
+    font-size: 14px;
+    color: #f1f1f1;
+    background-color: #2194FF;
+    padding: 10px 13px;
+    font-weight: 700;
+    border: unset;
+}
+
+/* choicevolume */
+
+.choicevolume {
+    background-color: #2D3238;
+
+}
+
+.choicevolume__container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.choicevolume__container div {
+    text-align: center;
+}
+
+.choicevolume__article {
+    margin-bottom: 35px;
+}
+
+
+.choicevolume__article--blue {
+    color: #2194FF;
+    font-size: 36px;
+}
+
+.choicevolume__img {
+    max-width: 600px;
+    margin: 30px auto 0 auto;
+}
+
+.choicevolume__button {
+    font-family: 'Russo One', sans-serif;
+    border: unset;
+    background-color: rgba(241, 241, 241, 0.2);
+    opacity: 0.2;
+    padding: 10px 40px;
+    border-radius: 20px;
+    color: #f1f1f1;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.25);
+    margin-right: 20px;
+}
+
+.choicevolume__button:nth-child(4) {
+    margin-right: 0;
+}
+
+.choicevolume__button--active {
+    background-color: #2194FF;
+    opacity: 1;
+}
+
+.choicevolume__button--order {
+    max-width: 295px;
+    margin: 0 auto;
+}

@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+.header__section {
+    background-color: #222222;
+}
+
+.header__container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.left__logo {
+    display: flex;
+    justify-content: space-between;
+    p {
+        color: #2194ff;
+    }
+}
+
+.right__logo {
+    display: flex;
+    flex-direction: row;
+    .tel {
+        font-size: 24px;
+        color:  #F1F1F1;
+        
+    }
+
+    .ask {
+        color: #2194FF;
+    }
+}
