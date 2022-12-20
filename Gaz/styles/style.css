@@ -5,6 +5,7 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+
 .header__section {
     background-color: #222;
 }
@@ -78,7 +79,6 @@
     margin-top: 10px;
 }
 
-.main__info {}
 
 .weather__time {
     display: flex;
@@ -88,6 +88,7 @@
 .preview {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .info__delivery {
@@ -112,7 +113,7 @@
 }
 
 .button__container {
-    max-width: 100%;
+    width: 100%;
     margin-top: 20px;
 }
 
@@ -130,6 +131,8 @@
 .price__section {
     background-color: #222;
 }
+
+
 
 
 .main__infoprice {
@@ -294,8 +297,13 @@
     min-height: 72px;
 }
 
+.img__benefits img {
+    height: 72px;
+}
+
 .item__benefits {
     width: 30%;
+    margin: 10px;
 }
 
 .benifits__article {
@@ -321,12 +329,15 @@
 
 section {
     padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .gurantee__container {
     display: flex;
     max-width: 1140px;
     margin: 0 auto;
+    align-items: center;
 }
 
 .guarantee__text {
@@ -373,6 +384,11 @@ section {
     margin-bottom: 35px;
 }
 
+.choicevolum__choice {
+    display: flex;
+    justify-content: center;
+}
+
 
 .choicevolume__article--blue {
     color: #2194FF;
@@ -382,6 +398,10 @@ section {
 .choicevolume__img {
     max-width: 600px;
     margin: 30px auto 0 auto;
+}
+
+.choicevolume__img img {
+    width: 100%;
 }
 
 .choicevolume__button {
@@ -397,6 +417,8 @@ section {
     text-align: center;
     text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.25);
     margin-right: 20px;
+    width: 200px;
+
 }
 
 .choicevolume__button:nth-child(4) {
@@ -575,7 +597,7 @@ details[open] {
     margin-bottom: 60px;
 }
 
-.askcompany__form {}
+
 
 .askcompany__title {
     font-size: 36px;
@@ -668,9 +690,9 @@ details[open] {
     max-width: 170px;
     width: 100%;
     height: 70px;
+    margin: 10px;
 }
 
-.img__partners {}
 
 
 /* footer */
@@ -806,4 +828,302 @@ details[open] {
     text-decoration: underline;
     cursor: pointer;
     opacity: 0.8;
+}
+
+/* adaptiv */
+
+@media(max-width: 1024px) {
+    .background__track {
+        display: none;
+    }
+
+    .info__delivery {
+        text-align: center;
+    }
+
+    .track__balon img {
+        width: 100%;
+    }
+
+    .preview {
+        justify-content: center;
+    }
+
+    .weather__time {
+        justify-content: space-between;
+    }
+
+    .img__time {
+        justify-content: center;
+    }
+
+    .txt__anotherdots {
+        text-align: center;
+    }
+
+    .infoprice__row {
+        flex-direction: column;
+    }
+
+    .infoprice__first,
+    .infoprice__third {
+        margin: 0 auto;
+    }
+
+    .infoprice__second {
+        margin: 20px auto;
+    }
+
+    .track__balon {
+        text-align: center;
+    }
+
+    .gaz {
+        text-align: center;
+    }
+
+    .gaz__price {
+        text-align: center;
+    }
+
+    .gaz__info {
+        text-align: center;
+    }
+
+    .button__mob {
+        text-align: center;
+    }
+
+    .arrow {
+        margin-top: 20px;
+    }
+
+}
+
+@media (max-width: 960px) {
+    .gurantee__left {
+        display: none;
+    }
+
+    .gurantee__right {
+        max-width: 500px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .guarantee__text {
+        text-align: center;
+    }
+
+    .choicevolum__choice {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .choicevolume__button {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+
+}
+
+
+@media(max-width: 880px) {
+    .cutaway {
+        position: unset;
+        padding: 10px;
+    }
+
+    .cutaway__username {
+        text-align: center;
+    }
+
+    .cutaway__prof {
+        text-align: center;
+    }
+
+    .askcompany__first {
+        flex-direction: column-reverse;
+    }
+
+    .askcompany__employee img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .askcompany__title {
+        text-align: center;
+    }
+
+    .ask__form {
+        align-items: center
+    }
+
+    .ask__buttoncontainer {
+        text-align: center;
+    }
+
+    .button__ask {
+        max-width: 400px;
+    }
+
+    .askcompany__second {
+        flex-wrap: wrap;
+    }
+}
+
+
+@media(max-width: 767px) {
+    .benifits__article {
+        font-size: 18px;
+    }
+
+    .reviews__card {
+        flex-direction: column;
+    }
+
+    .reviews__img {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .reviews__username {
+        text-align: center;
+    }
+
+    .reviews__city {
+        text-align: center;
+    }
+
+    .reviews__text {
+        text-align: center;
+    }
+
+    .header__logo {
+        flex-direction: column;
+        align-items: unset;
+    }
+
+    .right__logo {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .divider {
+        display: none;
+    }
+
+    .left__logo p {
+        padding-top: 25px;
+    }
+}
+
+
+@media(max-width: 619px) {
+    .items__benefits {
+        justify-content: center;
+    }
+
+    .askcompany__second {
+        justify-content: center;
+    }
+
+    .footer__card {
+        flex-direction: column;
+    }
+
+    .footer__maps {
+        width: 100%;
+    }
+
+    .footer__googlemaps {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 33px;
+        border-bottom-right-radius: 33px;
+    }
+
+    .footer__card {
+        border-radius: 33px;
+
+    }
+
+    .footer__cardinfo {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .footer__visittext {
+        text-align: center;
+    }
+}
+
+@media(max-width: 500px) {
+    .left__logo p {
+        display: none;
+    }
+
+    .left__logo {
+        justify-content: center;
+    }
+
+    .any__time {
+        text-align: center;
+    }
+
+    .any__weather {
+        text-align: center;
+    }
+
+    .right__logo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reviews__arrowleft {
+        max-width: 35px;
+    }
+
+    .reviews__arrowright {
+        max-width: 35px;
+    }
+
+    .reviews__card {
+        margin: 40px 50px 20px 50px;
+        padding: 20px;
+    }
+
+    .reviews__img img {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .footer__policy {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__policyarticle {
+        margin-bottom: 10px;
+    }
+}
+
+
+@media(max-width: 340px) {
+    .info__delivery {
+        font-size: 48px;
+    }
+}
+
+@media(max-width: 320px) {
+    .item__benefits {
+        width: 50%;
+    }
+}
+
+@media(max-width: 300px) {
+    .benifits {
+        font-size: 28px;
+    }
 }
